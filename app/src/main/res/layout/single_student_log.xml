@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/list_student_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:orientation="horizontal"
+        android:padding="5sp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/Log_which_student_attendance_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:singleLine="true"
+            android:text="Studet Name"
+            android:textColor="@color/black_de"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/Log_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="11/11/2001" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_student_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_student_name_layout"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:padding="5sp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/Log_student_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:singleLine="true"
+            android:text="tarsa@gmail.com"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Log_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:singleLine="true"
+            android:text="email student name" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_below="@id/list_student_email_layout"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

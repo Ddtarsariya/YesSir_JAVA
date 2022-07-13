@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/student_search"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item android:id="@+id/AddStud"
+        android:title="Add Student"
+        android:icon="@color/black_de"/>
+    <item android:id="@+id/ResetPointer"
+        android:title="Reset last index"
+        android:icon="@color/black_de"/>
+</menu>

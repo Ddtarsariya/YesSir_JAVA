@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.NavFragment.Report_us"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ReportUs_lay"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ReportUs_Text"
+            android:layout_width="match_parent"
+            android:hint="Report"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ReportUs_Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ReportUs_lay"
+        app:backgroundTint="@color/black_de"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:src="@drawable/ic_baseline_send_24"
+        app:tint="@android:color/white" />
+</RelativeLayout>

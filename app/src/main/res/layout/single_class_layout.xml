@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Class_Single_Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    app:cardCornerRadius="7sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/class_subject_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Subject_Name"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/class_subject_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="5sp"
+                android:text="Lecture"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:fontFamily="@font/maven_med"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10sp">
+
+            <TextView
+                android:id="@+id/class_standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="2sp"
+                android:text="standard"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:drawablePadding="2sp"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/class_division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2sp"
+                android:gravity="center"
+                android:text="Division"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10sp">
+
+            <TextView
+                android:id="@+id/class_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_department"
+                android:drawablePadding="2sp"
+                android:gravity="center"
+                android:text="Department"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="10sp">
+
+            <ImageView
+                android:id="@+id/class_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/ic_scan"
+                android:padding="15sp" />
+
+            <ImageView
+                android:id="@+id/class_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/ic_report"
+                android:padding="15sp" />
+
+            <ImageView
+                android:id="@+id/class_student_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/ic_student"
+                android:padding="15sp" />
+
+            <ImageView
+                android:id="@+id/class_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/ic_edit"
+                android:padding="15sp" />
+
+            <ImageView
+                android:id="@+id/class_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete"
+                android:padding="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/class_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/ic_baseline_color_lens_24"
+                    android:padding="15sp" />
+
+                <ImageView
+                    android:id="@+id/class_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_qrcode"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

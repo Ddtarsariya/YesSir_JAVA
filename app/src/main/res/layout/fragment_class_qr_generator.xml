@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragment.Class.ClassQrGenerator">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/calssQr_SubjectName_card"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/calssQr_SubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Subject name"
+            android:textAlignment="center"
+            android:textColor="@color/black_de"
+            android:fontFamily="@font/maven_reg"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/calssQr_Qrview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calssQr_SubjectName_card" />
+
+    <TextView
+        android:id="@+id/classQr_Which"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_reg"
+        android:text="Share"
+        android:textStyle="bold"
+        android:textColor="@color/black_de"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/calssQr_Qrview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/classQr_Which">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/calssQr_Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:text="Share Class" />
+
+            <Button
+                android:id="@+id/calssQr_Unique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20sp"
+                android:text="Unique Qr" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

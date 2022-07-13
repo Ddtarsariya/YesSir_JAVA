@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black_de</item>
+        <item name="colorPrimaryDark">@color/black_de</item>
+        <item name="colorAccent">#9c9a97</item>
+    </style>
+
+    <style name="AppTheme_Red" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#ed0c0c</item>
+        <item name="colorPrimaryDark">#EA0505</item>
+        <item name="colorAccent">#F83939</item>
+    </style>
+
+    <style name="AppTheme_Yellow" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#ffa931</item>
+        <item name="colorPrimaryDark">#FDA01E</item>
+        <item name="colorAccent">#FDB044</item>
+    </style>
+
+    <style name="AppTheme_Orange" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#F3690D</item>
+        <item name="colorPrimaryDark">#DF5B04</item>
+        <item name="colorAccent">#FA741B</item>
+    </style>
+
+    <style name="AppTheme_Green" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#2F8779</item>
+        <item name="colorPrimaryDark">#2c786c</item>
+        <item name="colorAccent">#2D8174</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TableStyle">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <style name="versionStyle">
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">5sp</item>
+    </style>
+
+</resources>

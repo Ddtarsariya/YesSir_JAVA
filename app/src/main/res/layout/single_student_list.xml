@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1sp">
+
+    <RelativeLayout
+        android:id="@+id/Student_List_Counter_Lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Name_Lay"
+        android:layout_alignBottom="@id/Name_Lay">
+
+        <TextView
+            android:id="@+id/Student_List_Counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="13sp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name_Lay"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/Student_Qr"
+        android:layout_toEndOf="@+id/Student_List_Counter_Lay"
+        android:scrollbars="horizontal">
+
+        <EditText
+            android:id="@+id/Student_Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/Student_Qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4sp"
+        android:paddingStart="4sp"
+        android:paddingEnd="6sp"
+        android:paddingTop="17sp"
+        android:paddingBottom="15sp"
+        android:src="@drawable/ic_qrcode"
+        app:tint="@color/black_de" />
+
+    <LinearLayout
+        android:id="@+id/Expanded_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name_Lay"
+        android:layout_marginEnd="5sp"
+        android:layout_toEndOf="@id/Student_List_Counter_Lay"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Number_Lay"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4sp"
+            android:hint="Mobile Number">
+
+            <EditText
+                android:id="@+id/Student_Number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4sp"
+            android:hint="Note"
+            app:counterEnabled="true"
+            app:counterMaxLength="300">
+
+            <EditText
+                android:id="@+id/Student_Notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="300" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</RelativeLayout>

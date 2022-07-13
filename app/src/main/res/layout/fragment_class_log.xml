@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Class_log">
+
+    <ProgressBar
+        android:id="@+id/Log_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Log_recyclerview"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/single_student_log"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+</RelativeLayout>

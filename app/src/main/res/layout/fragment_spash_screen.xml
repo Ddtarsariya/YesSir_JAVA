@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="40sp"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/splash_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:textColor="@color/black_de"
+            android:fontFamily="@font/maven_reg"
+            android:text="Hi,"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/splash_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splash_name"
+            android:padding="20sp"
+            android:fontFamily="@font/maven_med"
+            android:textColor="@color/black_de"
+            android:text="welcome back"
+            android:textSize="39sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/segoesc"
+        android:src="@drawable/logofinal"
+        android:text="Yes sir"
+        android:paddingBottom="20sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="25sp" />
+
+</RelativeLayout>

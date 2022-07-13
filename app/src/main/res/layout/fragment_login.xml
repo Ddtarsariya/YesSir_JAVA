@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Login_root"
+    android:background="@color/white"
+    tools:context=".Fragment.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mainScreenLogo"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:padding="30sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logocirclewhite"/>
+
+        <LinearLayout
+            android:id="@+id/lablelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/manualLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Login Here"
+                    android:textColor="#777777" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/login_signinButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:buttonSize="wide"
+                    app:colorScheme="auto" />
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/black_de"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lablelay"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+
+</FrameLayout>

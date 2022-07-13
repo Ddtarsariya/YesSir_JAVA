@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NavFragment.Guidence">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/about_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About the app:"
+                    android:textColor="@color/black_de" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This application is designed to take a attendance system digitally." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/title_class_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_app"
+            android:background="#000"
+            android:padding="10sp"
+            android:text="CLASS ICONS"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_add_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_class_icon"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:text="Add Subject :"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_add_24"
+                    app:drawableTint="@color/black_de" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In the homeScreen you can add new subject by clicking '+' button at the right bottom." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_add_class"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:drawableTint="@color/black_de"
+                    android:text="Taking attendance :"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_scan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="With the help of this icon user can taking attendance of students by student QR code." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_scan"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:drawableTint="@color/black_de"
+                    android:text="Report :"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_report" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Here you can see all students attendance report in tabular form and also export attendance table in .csv format by clicking export button at the right bottom." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_report"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:drawableTint="@color/black_de"
+                    android:text="Show and edit students : "
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_student" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User can edit information as well as delete student data.(We provide autosave feature so if you edit the information of student it is automatically saved)" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_editClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_student"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:drawableTint="@color/black_de"
+                    android:text="Edit Class:"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="With the help of this tool user can edit the class information and data." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_editClass"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:drawableTint="@color/black_de"
+                    android:text="Delete Class:"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_delete" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User can delete entire class data." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_paint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_delete"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="@color/lite_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:drawableTint="@color/black_de"
+                    android:text="Change color:"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_color_lens_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User can change class color acording to their preference." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_QR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_paint"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:text="Class Qr : "
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_qrcode"
+                    app:drawableTint="@color/black_de" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This icon allows the user to share their class details and students details.
+ Moreover, we provide Unique QR Code. With the help of this Unique QR Code, students can give their attendance in class by scanning this QR." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/title_Menu_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_QR"
+            android:background="#000"
+            android:padding="10sp"
+            android:text="MENU ICONS"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_menu_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_Menu_icon"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_settings_24"
+                    android:drawablePadding="15sp"
+                    android:text="Setting :"
+                    android:textColor="@color/black_de"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If the name of the student's email is not as per the class record, The student can change their name according to the class record by going to the setting." />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info_menu_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_menu_setting"
+            android:layout_margin="3sp"
+            app:cardBackgroundColor="#ECECEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QR Code storage path:- /storage/emulated/0/Attendance/" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</ScrollView>

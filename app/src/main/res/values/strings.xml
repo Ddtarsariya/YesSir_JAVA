@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Yes Sir</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigatio_drawer_open">Open navigation drawer</string>
+    <string name="navigatio_drawer_close">Close navigation drawer</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="change_attendance">Change Attendance</string>
+    <string name="delete_attendance">Delete Attendance</string>
+    <string name="add_class">Add class</string>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Report_Fragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_class_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:backgroundTint="#E1DFDF"
+        app:cardCornerRadius="10sp">
+
+        <TextView
+            android:id="@+id/Student_Report_Subject_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="Subject_Name"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ProgressBar
+        android:id="@+id/report_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card_class_name">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5sp"/>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Export_Report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_export"
+        app:backgroundTint="@color/black_de"
+        app:tint="@android:color/white" />
+</RelativeLayout>

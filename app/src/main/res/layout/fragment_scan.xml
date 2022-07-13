@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.Scan_Fragment"
+    android:layout_width="match_parent"
+    android:id="@+id/DoubleTap"
+    android:background="@color/black_de"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/ScannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/searching_image"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"/>
+<TextView
+    android:id="@+id/CurrentDate"
+    android:padding="10sp"
+    android:textColor="#fff"
+    android:textSize="13sp"
+    android:text="4/4/2020"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <ImageSwitcher
+        android:id="@+id/Flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="20sp"
+        android:background="@drawable/ic_baseline_flash_off_24" />
+    <TextView
+        android:id="@+id/DoubleTap_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:paddingBottom="300sp"
+        android:textColor="#fff"
+        android:text="Douuble tap on screen to resume"/>
+
+    <ImageSwitcher
+        android:id="@+id/found_notfound"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/timer"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

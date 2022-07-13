@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Add_Student_Id_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Id"
+        android:padding="4sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/change_Student_attendance_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/change_student_attendance_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add_Student_Id_layout"
+        android:text="Choose Date" />
+
+    <TextView
+        android:id="@+id/change_student_attendance_showDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_below="@id/Add_Student_Id_layout"
+        android:layout_alignBottom="@id/change_student_attendance_datePicker"
+        android:layout_toEndOf="@id/change_student_attendance_datePicker"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/change_student_attendance_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_student_attendance_datePicker"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/change_student_attendance_radioA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/change_student_attendance_radioP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/change_student_attendance_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_student_attendance_radioGroup"
+        android:layout_marginStart="20sp"
+        android:textColor="@android:color/holo_red_light" />
+
+    <Button
+        android:id="@+id/Cancel_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_student_attendance_error"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/change_student_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_student_attendance_error"
+        android:layout_marginStart="10sp"
+        android:layout_toEndOf="@+id/Cancel_change"
+        android:text="Change" />
+
+</RelativeLayout>

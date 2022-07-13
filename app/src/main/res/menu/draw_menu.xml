@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="none">
+            <item android:id="@+id/nav_class"
+                android:icon="@drawable/ic_class"
+                android:title="Class"/>
+            <item android:id="@+id/nav_scan"
+                android:icon="@drawable/ic_scan"
+                android:title="Scan"/>
+            <item android:id="@+id/nav_setting"
+                android:title="Setting"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+        </group>
+
+        <item android:title="Communicate">
+            <menu>
+                <item android:id="@+id/nav_share"
+                    android:title="Share"
+                    android:icon="@drawable/ic_baseline_share_24"/>
+                <item android:id="@+id/nav_report"
+                    android:title="Report us"
+                    android:icon="@drawable/ic_baseline_bug_report_24"/>
+                <item android:id="@+id/nav_guide"
+                    android:title="Help"
+                    android:icon="@drawable/ic_baseline_help_outline_24"/>
+            </menu>
+        </item>
+        <item android:title="Others">
+            <menu>
+                <item android:id="@+id/nav_logout"
+                    android:title="Logout" />
+            </menu>
+        </item>
+        <item android:title="v.1.0" android:enabled="false"
+            android:id="@+id/nav_version"/>
+    </menu>

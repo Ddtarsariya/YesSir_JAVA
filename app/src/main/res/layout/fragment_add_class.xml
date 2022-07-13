@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".Fragment.Add_Class">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/standard_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/Standard_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/standard"
+                    android:drawablePadding="15sp"
+                    android:padding="7sp"
+                    android:text="Standard"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Add_class_Standard"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:hint="Standard"
+                    app:boxStrokeErrorColor="@android:color/holo_red_light"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/Add_class_StandardE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SubjectDetails_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintTop_toBottomOf="@+id/standard_layout">
+
+                <TextView
+                    android:id="@+id/SubjectDetails_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15sp"
+                    android:padding="7sp"
+                    android:text="Subject Details"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:drawableStartCompat="@drawable/sub_detail" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Add_class_SubjectName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:hint="Subject Name"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/Add_class_SubjectNameE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Add_class_Department"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:hint="Department"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/Add_class_DepartmentE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Add_class_Division"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:hint="Division"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/Add_class_DivisionE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintTop_toBottomOf="@+id/SubjectDetails_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/sub_type"
+                    android:drawablePadding="15sp"
+                    android:padding="7sp"
+                    android:text="Select Type"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/Add_class_SelectType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp">
+
+                    <RadioButton
+                        android:id="@+id/Add_class_radio_Lecture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Lecture" />
+
+                    <RadioButton
+                        android:id="@+id/Add_class_radio_Lab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lab" />
+
+                    <RadioButton
+                        android:id="@+id/Add_class_radio_Exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Exam" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Student_Roll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintTop_toBottomOf="@+id/select_type_layout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Text_RollDetail_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_team"
+                        android:drawablePadding="15sp"
+                        android:padding="7sp"
+                        android:text="Roll Details"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/rollError"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/Text_RollDetail_label"
+                        android:padding="15sp"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Text_RollDetail_label"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/Add_class_Roll_from"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:hint="Roll From"
+                            app:errorEnabled="true">
+
+                            <EditText
+                                android:id="@+id/Add_class_Roll_fromE"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="3" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/Add_class_Roll_end"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:hint="Roll End"
+                            app:errorEnabled="true">
+
+                            <EditText
+                                android:id="@+id/Add_class_Roll_endE"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="3" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Add_class_save"
+        android:layout_width="wrap_content"
+        app:fabSize="mini"
+        app:backgroundTint="@color/black_de"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_baseline_save_24"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

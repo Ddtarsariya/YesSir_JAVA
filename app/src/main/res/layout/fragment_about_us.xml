@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragment.NavFragment.About_us">
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        app:cardCornerRadius="20sp">
+        <RelativeLayout
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:text="Developed By : Dhaval D. Tarsariya"
+                    android:textSize="18sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_my"
+                android:layout_margin="10sp">
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_thanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_tech"
+                android:layout_margin="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"
+                        android:textColor="@color/black_de"
+                        android:text="Thanks for Testing &amp; Supports"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_thanks"
+                android:layout_margin="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:textAlignment="center"
+                    android:text="Contact us :- adtech1819@gmail.com"
+                    android:textSize="18sp" />
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

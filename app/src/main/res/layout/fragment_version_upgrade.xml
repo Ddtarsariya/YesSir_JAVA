@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Version_Upgrade_Fragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20sp"
+        android:elevation="20sp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:paddingTop="50sp"
+        android:paddingBottom="20sp"
+        android:id="@+id/rs_textview"
+        android:textColor="@color/black_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="79/-"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/feature_text1"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:layout_below="@id/rs_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Unlock all the features"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/feature_text2"
+        android:layout_below="@id/feature_text1"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- No Ads"
+        android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/feature_text3"
+                android:layout_below="@id/feature_text2"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Remove limitation of only 4 subjects"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/feature_text4"
+                android:layout_below="@id/feature_text3"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- You can store more data of students"
+                android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buy_Now"
+        android:layout_margin="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy now"
+        android:layout_below="@id/feature_text4"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

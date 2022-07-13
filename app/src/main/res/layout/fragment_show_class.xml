@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    <ProgressBar
+        android:id="@+id/class_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/class_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/adView"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/class_add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/add_class"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="@color/black_de"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>
